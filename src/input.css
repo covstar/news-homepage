@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+
+html{
+    @apply font-Inter
+}
+body{
+    @apply md:py-5% md:px-10% sm:px-4 py-6
+}
+header{
+    @apply md:mb-16 relative sm:mb-8
+}
+
+/* navbar and nav links  */
+nav {
+    @apply flex
+}
+.logo img{
+    @apply w-16 sm:w-12
+}
+
+/* Desktop_nav_links */
+.desktop_nav_links{
+    @apply my-auto ml-auto sm:hidden
+}
+.desktop_nav_links ul{
+    @apply flex gap-x-12 
+}
+.desktop_nav_links li a {
+    @apply hover:text-Soft_red
+}
+/* Mobile navlinks  */
+.mobile_nav_links{
+    @apply md:hidden tb:hidden ml-auto bg-Off-white absolute z-10 right-0 h-screen w-[65%] px-6 -mx-4 -my-6 hidden
+}
+.background_overlay{
+    @apply bg-Very_dark_blue opacity-30 w-full h-full hidden absolute -mx-4 -my-6 md:hidden z-10
+}
+.menu_close_icons{
+    @apply absolute md:hidden right-6 cursor-pointer z-20
+}
+.close_icon{
+    @apply hidden
+}
+.mobile_nav_links ul {
+    @apply mt-[58%] text-[1.2rem]
+}
+.mobile_nav_links li{
+    @apply pt-8%
+}
+.mobile_nav_links li a{
+    @apply hover:text-Soft_red
+}
+
+/* middle section */
+.middle_section_container{
+    @apply md:flex gap-x-8
+}
+
+/* left sidebar */
+.left_sidebar{
+    @apply md:w-3/4
+}
+.news_part{
+    @apply md:flex gap-x-12 mt-8 w-full relative 
+}
+.news_title{
+    @apply md:w-fit sm:mb-4
+}
+.news_title h1{
+    @apply font-black text-[3rem]/[1.2] tracking-wide text-Very_dark_blue sm:text-[2.5rem]
+}
+.news_para{
+    @apply md:w-fit
+}
+.news_para p{
+    @apply text-Dark_grayish_blue text-[0.9rem] pb-8 sm:text-[.95rem]
+}
+.news_para div{
+    @apply bottom-0 md:absolute 
+}
+.news_para div button{
+    @apply bg-Soft_red px-6 py-3  hover:bg-Very_dark_blue border-Very_dark_blue text-Off-white font-semibold tracking-[.2rem] text-[.8rem] sm:text-[1.1rem]
+}
+
+/* right sidebar */
+.news{
+    @apply bg-Very_dark_blue md:w-2/5 p-8 sm:mt-20
+}
+.news h1{
+    @apply text-Soft_orange md:text-4xl sm:text-3xl font-semibold
+}
+.news div{
+    @apply mt-8 border-b pb-8
+}
+.news div:nth-child(4){
+    @apply border-none pb-0
+}
+.news div a {
+    @apply text-white text-[1.2rem] font-semibold hover:text-Soft_orange
+}
+.news div p{
+    @apply text-Grayish_blue pt-2 text-[0.9rem] 
+}
+
+/* blog post  */
+.blog_section{
+    @apply md:flex md:mt-10% gap-x-6 justify-between mb-8 sm:mt-20%
+}
+.blog_container{
+    @apply flex relative sm:mb-10
+}
+.blog_container img{
+    @apply w-4/6
+}
+.blog_text{
+    @apply w-full
+}
+.blog_text h3{
+    @apply text-[1.5rem]/[1] font-bold tracking-wider text-Grayish_blue mb-2
+}
+.blog_text a{
+    @apply text-[1rem] font-bold hover:text-Soft_red text-Very_dark_blue
+}
+.blog_text p{
+    @apply text-Dark_grayish_blue text-[0.8rem] bottom-0 absolute sm:text-[.9rem]
+}
+
+/* footer */
+footer{
+    @apply pb-2 text-center md:mt-10% sm:mt-20%
+}
+.attribution a{
+    @apply text-Soft_red
+}
+
+@tailwind utilities;
